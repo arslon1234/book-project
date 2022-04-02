@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.show-password {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  span {
+    position: absolute;
+    top: 50%;
+    right: 14%;
+    transform: translate(-50%, -50%);
+  }
+  .no {
+    display: none;
+  }
+  .yes {
+    display: block;
+  }
+}
+.login {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("../../assets/images/coffee-g8edcbf3a3_1920.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .login_detail {
+    width: 400px;
+    height: 370px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    margin-left: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .login_title {
+      text-align: center;
+      font-size: 28px;
+      color: #dddbdb;
+      font-weight: 500;
+      letter-spacing: 1px;
+    }
+    input {
+      width: 80%;
+      height: 45px;
+      padding: 0 5px;
+      margin: 8px 0px;
+      outline: none;
+      color: #eeebeb;
+      font-size: 17px;
+      background-color: transparent;
+      border: 1px solid #dddbdb;
+      border-radius: 6px;
+      caret-color: #dddbdb;
+    }
+    ::placeholder {
+      color: #dddbdb;
+      letter-spacing: 0.5px;
+    }
+    .button {
+      width: 80%;
+      height: 45px;
+      border: 1px solid #dddbdb;
+      border-radius: 10px;
+      margin-top: 25px;
+      background-color: transparent;
+      color: #dddbdb;
+      font-size: 18px;
+      color: #dddbdb;
+      font-weight: 500;
+      transition: all 0.5s linear;
+    }
+  }
+}
+@media (max-width: "688px") {
+  .login {
+    .login_detail {
+      width: 80%;
+      height: 350px;
+      margin-left: 20px;
+      .login_title {
+        font-size: 23px;
+      }
+      input {
+        width: 80%;
+        height: 40px;
+        padding: 0 5px;
+        margin: 5px 0px;
+        font-size: 15px;
+      }
+    }
+  }
+}
